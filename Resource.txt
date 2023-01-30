@@ -1,0 +1,11 @@
+## Đây là những tài liệu chúng em có tham khảo qua
+
+https://t3h.edu.vn/tin-tuc/model-view-controller-mvc-trong-php-tim-hieu-ve-mvc#:~:text=Model%20View%20Controller%20hay%20c%C3%B2n,%C4%91%C6%B0%E1%BB%A3c%20%E1%BB%A9ng%20d%E1%BB%A5ng%20th%E1%BB%B1c%20hi%E1%BB%87n.
+
+MVC concept
+https://www.youtube.com/watch?v=bQD-2wmxtww
+HTTP concept
+https://viblo.asia/p/http-request-la-gi-cac-phuong-thuc-http-request-6J3Zgy6A5mB
+
+PHP documentation
+https://www.php.net/docs.php

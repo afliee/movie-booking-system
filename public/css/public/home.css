@@ -1,0 +1,206 @@
+.movie-card {
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 315px;
+    margin: 2em;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-header {
+    padding: 0;
+    margin: 0;
+    height: 367px;
+    width: 100%;
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.header-icon-container {
+    position: relative;
+}
+
+.header-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 54px;
+    text-shadow: 0px 0px 20px #6abcea, 0px 5px 20px #6abcea;
+    opacity: 0.85;
+}
+
+.header-icon:hover {
+    text-shadow: 0px 0px 20px #6abcea, 0px 5px 30px #6abcea;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    opacity: 1;
+}
+
+.movie-card:hover {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+    transition: 0.5s ease;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.movie-content {
+    padding: 18px 18px 24px 18px;
+    margin: 0;
+}
+
+.movie-content-header,
+.movie-info {
+    /* display: flex; */
+    display: none;
+    transition: 0.5 ease;
+    justify-content: center;
+}
+.movie-card:hover .movie-info {
+    transition: 0.3 ease;
+    display: flex;
+}
+
+.movie-title {
+    color: #c69749;
+    font-size: 24px;
+    margin: 0;
+    display: table-cell;
+}
+
+.movie-info {
+    margin-top: 1em;
+}
+
+.info-section {
+    display: table-cell;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.info-section:first-of-type {
+    text-align: left;
+}
+
+.info-section:last-of-type {
+    text-align: right;
+}
+
+.info-section label {
+    display: block;
+    color: #fff;
+    margin-bottom: 0.5em;
+    font-size: 15px;
+}
+
+.info-section span {
+    font-weight: 700;
+    font-size: 11px;
+    transition: all 0.3 ease;
+    margin: 5px;
+}
+
+.info-section span:hover {
+    color: #c69749;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 500px) {
+    .movie-card {
+        width: 95%;
+        max-width: 95%;
+        margin: 1em;
+        display: block;
+    }
+
+    .container {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.tagline {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    list-style-type: none;
+}
+.tagline li {
+    margin: 20px;
+    transition: all 0.5 ease;
+}
+.tagline li:not(i):hover a {
+    color: #c69749;
+    font-size: 35px;
+}
+.tagline a {
+    color: #ddd;
+}
+
+.movie-card::before {
+    content: '';
+    position: absolute;
+    top: 65%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgb(31, 86, 181) 50%, transparent);
+}
+
+.btn-purchase {
+    align-items: center;
+    background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.btn-purchase:active,
+.btn-purchase:hover {
+    outline: 0;
+}
+
+.btn-purchase a {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+    color: #fff;
+}
+
+.btn-purchase:hover a {
+    background: none;
+}
+
+@media (min-width: 768px) {
+    .btn-purchase {
+        font-size: 24px;
+        min-width: 196px;
+    }
+}

@@ -1,0 +1,310 @@
+.combos {
+    display: none;
+}
+
+.slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin: -20px 0px 0px 0px;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.slider .slick-arrow.slick-prev {
+    left: 0;
+    color: #fff;
+}
+
+.slider .slick-arrow.slick-next {
+    right: 0;
+    color: #fff;
+}
+
+.slider .slick-arrow.slick-disabled {
+    opacity: 0.2;
+}
+
+.seat.active {
+    opacity: 0.6;
+    transition: ease 0.3s;
+}
+
+.cards {
+    margin-bottom: 20px;
+}
+.cards .item {
+    overflow: hidden;
+    margin: 10px;
+    display: flex;
+    border-radius: 4px;
+}
+
+.cards .item-right,
+.cards .item-left {
+    padding: 20px 0;
+}
+
+.cards .item-right {
+    background-color: aliceblue;
+    width: 25%;
+    position: relative;
+    border-radius: 0 10px 10px 0;
+}
+
+.cards .item-right .up-border,
+.cards .item-right .down-border {
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
+.cards .item-right .up-border {
+    top: -15px;
+    right: -15px;
+}
+
+.cards .item-right .down-border {
+    bottom: -15px;
+    right: -15px;
+}
+
+.cards .item-right .num {
+    font-size: 60px;
+    text-align: center;
+    color: #000;
+}
+
+.cards .item-right .day,
+.cards .item-left .event {
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 9px;
+}
+
+.cards .item-right .day {
+    text-align: center;
+    font-size: 25px;
+}
+
+.cards .item-left {
+    width: 71%;
+    padding: 34px 0px 19px 46px;
+    border-left: 3px dotted #121212;
+    border-radius: 10px 0 0 10px;
+    background-color: aliceblue;
+}
+
+.cards .item-left .title {
+    color: #000;
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.cards .item-left .sce {
+    margin-top: 5px;
+    display: block;
+}
+
+.cards .item-left .sce .icon,
+.cards .item-left .sce p,
+.cards .item-left .loc .icon,
+.cards .item-left .loc p {
+    float: left;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.cards .item-left .sce .icon,
+.cards .item-left .loc .icon {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #666;
+}
+
+.cards .item-left .loc {
+    display: block;
+}
+
+.fix {
+    clear: both;
+}
+
+.cards .item .tickets,
+.booked,
+.cancel {
+    color: #fff;
+    padding: 6px 14px;
+    float: right;
+    margin-top: 10px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.cards .item .tickets {
+    background: #777;
+}
+
+.cards .item .booked {
+    background: #3d71e9;
+}
+
+.cards .item .cancel {
+    background: #df5454;
+}
+
+.linethrough {
+    text-decoration: line-through;
+}
+
+@media only screen and (max-width: 1150px) {
+    .cards .item {
+        width: 100%;
+        margin-right: 20px;
+    }
+
+    div.cards {
+        margin: 0 20px auto;
+    }
+}
+
+.combo,
+.food {
+    display: flex;
+    justify-content: flex-start;
+    background-color: aliceblue;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    color: #000;
+}
+
+.combo .content,
+.food .content {
+    flex-grow: 1;
+}
+
+.combo span,
+.food span {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.combo span,
+.food span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3 ease;
+    margin-right: 10px;
+}
+
+.combo span:hover,
+.food span:hover {
+    font-size: 40px;
+}
+
+.combo .combo__header {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+}
+.btn-change-product {
+    color: #fff;
+    font-size: 35px;
+    border: none !important;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.get-combo::after {
+    content: '/';
+    font-size: 35px;
+    margin-left: 20px;
+}
+
+.product {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 10px;
+    color: #000;
+}
+.product .product-title {
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+.product .btn-close {
+    margin-right: 10px;
+    cursor: pointer;
+}
+.product .btn-close:hover {
+    font-size: 30px;
+}
+
+.background-image-left {
+    top: 28%;
+    position: absolute;
+    bottom: 0;
+    width: 40%;
+    z-index: -1;
+}
+
+.background-image-right {
+    position: absolute;
+    bottom: 40%;
+    right: 0;
+    z-index: -1;
+}
+
+/* CSS */
+.btn-pay {
+    align-items: center;
+    background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 19px 24px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.button-63:active,
+.button-63:hover {
+    outline: 0;
+}
+
+@media (min-width: 768px) {
+    .btn-pay {
+        font-size: 24px;
+        min-width: 196px;
+    }
+}
