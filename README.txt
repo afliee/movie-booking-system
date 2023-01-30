@@ -15,4 +15,4 @@ PHẦN HƯỚNG DẪN:
 
 --------------------------------------
 -- link thuyết trình về đồ án: 
-	- "https://www.youtube.com/watch?v=D3It8pxhEhs"
+
